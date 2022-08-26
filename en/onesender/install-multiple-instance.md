@@ -20,6 +20,7 @@ ls -l
 
 3. Download the install script from github
 ```
+cd /tmp/onesender-latest
 wget https://raw.githubusercontent.com/onesender/docs/main/script/install-many.sh
 ```
 
