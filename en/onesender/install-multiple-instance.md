@@ -24,7 +24,7 @@ cd /tmp/onesender-latest
 wget https://raw.githubusercontent.com/onesender/docs/main/script/install-many.sh
 ```
 
-4. Jalankan script install
+4. Run the install script 
 ```
 sudo bash install-many.sh
 ```
