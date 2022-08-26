@@ -165,7 +165,7 @@ server:
 
 # FUNC_FINISHING_INSTALL 1 
 FUNC_FINISHING_INSTALL() {
-
+echo "- Install init script"
 $ONESENDER_APP --config=/opt/onesender/config_${1}.yaml --install
 
 echo ""
@@ -174,7 +174,7 @@ systemctl daemon-reload
 systemctl enable "onesender@${1}"
 sleep 3
 echo ""
-echo "- Start server"
+echo "- Start app #${1}"
 systemctl start "onesender@${1}"
 sleep 3
 
@@ -190,6 +190,6 @@ do
   echo "Install instance #$i"
   FUNC_INSTALL_CONFIG $i $PORT
   FUNC_FINISHING_INSTALL $i
-  $PORT++
+  let "PORT=PORT+1" 
 done
 
