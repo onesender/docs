@@ -26,8 +26,9 @@ wget https://raw.githubusercontent.com/onesender/docs/main/script/install-many.s
 
 4. Jalankan script install
 ```
-sudo install-many.sh
+sudo bash install-many.sh
 ```
 
 This script will copy files to the folder `/opt/onesender` automatically.
 
+![Install screen](/media/install-many-1.png "Install screen")
