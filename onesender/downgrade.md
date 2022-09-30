@@ -21,7 +21,14 @@ Untuk downgrade OneSender silahkan mengikuti langkah-langkah berikut:
 auto_upgrade:
     enabled: false
 ```
-4. Jalankan OneSender
+4. Install setting baru
+```
+cd /opt/onesender
+./onesender-x86_64 -c /opt/onesender/config_1.yaml --install
+```
+**PS**:
+ubah file config dengan sesuai file yang digunakan
+
 ```
 systemctl stop onesender@x
 ```
