@@ -27,8 +27,17 @@ cd /opt/onesender
 ./onesender-x86_64 -c /opt/onesender/config_1.yaml --install
 ```
 **PS**:
-ubah file config dengan sesuai file yang digunakan
+ubah file config sesuai file yang digunakan
 
+5. Jalankan OneSender
 ```
-systemctl stop onesender@x
+systemctl start onesender@x
+```
+
+
+**PS**:
+- Untuk cek versi yang digunakan gunakan command berikut
+```
+cd /opt/onesender
+./onesender-x86_64 -c ./config_(x).yaml --version
 ```
