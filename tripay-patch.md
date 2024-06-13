@@ -17,11 +17,12 @@ do_action( 'tripay/transaction_created', $order );
 ![Tripay patch ](https://i.postimg.cc/2jFhz54m/tripay.png)
 
 Meta data:
----|---
-Jumlah tagihan | {{order_metadata._tripay_payment_amount}}
-Kode reference | {{order_metadata._tripay_payment_reference}}
-Link pembayaran | {{order_metadata._tripay_payment_pay_url}}
-Kode pembayaran | {{order_metadata._tripay_payment_pay_code}}
-Expired time | {{order_metadata._tripay_payment_expired_time}}
-Expired date | {{order_metadata._tripay_payment_expired_date}}
-Merchant | {{order_metadata._tripay_payment_type}}
+| Keterangan      | Shortcode                                      |
+|-----------------|------------------------------------------------|
+| Jumlah tagihan  | {{order_metadata._tripay_payment_amount}}      |
+| Kode reference  | {{order_metadata._tripay_payment_reference}}   |
+| Link pembayaran | {{order_metadata._tripay_payment_pay_url}}     |
+| Kode pembayaran | {{order_metadata._tripay_payment_pay_code}}    |
+| Expired time    | {{order_metadata._tripay_payment_expired_time}}|
+| Expired date    | {{order_metadata._tripay_payment_expired_date}}|
+| Merchant        | {{order_metadata._tripay_payment_type}}        |
